@@ -22,11 +22,11 @@ namespace Software_Lab_3_Task_2
                 double y = Convert.ToDouble(ForY.Text);
                 double z = Convert.ToDouble(ForZ.Text);
                 double result = Calculate(x, y, z);
-                Result.Text = Convert.ToString(result);
+                Text = Convert.ToString($" Результат: {result:F4}");
             }
             catch (Exception)
             {
-                Result.Text = "ERROR";
+                Text = " ERROR";
             }
         }
         private void Form1_MouseMove(object sender, MouseEventArgs e)

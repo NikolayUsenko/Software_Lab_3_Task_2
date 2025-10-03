@@ -37,8 +37,6 @@
             X = new Label();
             Y = new Label();
             Z = new Label();
-            ResultText = new Label();
-            Result = new TextBox();
             SuspendLayout();
             // 
             // Expression
@@ -129,28 +127,6 @@
             Z.TabIndex = 4;
             Z.Text = "Z = ";
             // 
-            // ResultText
-            // 
-            ResultText.AutoSize = true;
-            ResultText.BackColor = SystemColors.GradientInactiveCaption;
-            ResultText.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            ResultText.Location = new Point(12, 298);
-            ResultText.Name = "ResultText";
-            ResultText.Size = new Size(151, 37);
-            ResultText.TabIndex = 5;
-            ResultText.Text = "Результат:";
-            // 
-            // Result
-            // 
-            Result.BackColor = SystemColors.GradientInactiveCaption;
-            Result.BorderStyle = BorderStyle.None;
-            Result.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            Result.Location = new Point(162, 298);
-            Result.Name = "Result";
-            Result.ReadOnly = true;
-            Result.Size = new Size(326, 37);
-            Result.TabIndex = 13;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -167,8 +143,6 @@
             Controls.Add(X);
             Controls.Add(Y);
             Controls.Add(Z);
-            Controls.Add(ResultText);
-            Controls.Add(Result);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
@@ -186,7 +160,5 @@
         private Label X;
         private Label Y;
         private Label Z;
-        private Label ResultText;
-        private TextBox Result;
     }
 }
