@@ -22,7 +22,7 @@ namespace Software_Lab_3_Task_2
                 double y = Convert.ToDouble(ForY.Text);
                 double z = Convert.ToDouble(ForZ.Text);
                 double result = Calculate(x, y, z);
-                Text = Convert.ToString($" Результат: {result:F4}");
+                Text = Convert.ToString($" Р РµР·СѓР»СЊС‚Р°С‚: {result:F4}");
             }
             catch (Exception)
             {
